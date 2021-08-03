@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<title>CSS3会员登录窗口模板 - 站长素材</title>
+
+<link rel="stylesheet" href="css/style.css">
+<scrpit src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></scrpit>
+</head>
+<body>
+
+<div class="login-box">
+  <h2>会员登录</h2>
+  <form  name="form1" action="gaibian.html" method="post" onsubmit="return aa()">
+    <div class="user-box">
+      <input type="text" name="username" id="username" required="">
+      <label>用户名</label>
+    </div>
+    <div class="user-box">
+      <input type="password" name="password" id="password" required="">
+      <label>密码</label>
+    </div>
+<!--    <input type="hidden" id="md5-password" name="password">-->
+<!--    <a  type="submit">-->
+<!--      <span></span>-->
+<!--      <span></span>-->
+<!--      登录-->
+<!--    </a>-->
+    <button type="submit" onclick="aa()">登录</button>
+  </form>
+</div>
+  
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';color:#ffffff">
+<p>适用浏览器：360、FireFox、Chrome、Opera、傲游、搜狗、世界之窗. 不支持Safari、IE8及以下浏览器。</p>
+</div>
+
+<script>
+  function aa() {
+    var uname = form1.username.value;
+    var pwd = form1.password.value;
+    // let md5pwd = document.getElementById('md5-password');
+    // md5pwd.value=md5(pwd.value);
+    if ((uname=="xiaoju")&&(pwd=="123")) {
+      form1.submit();
+    window.open(gaibian.html);
+    }
+    else
+    {
+      alert("账号密码不正确")
+      console.log("良好")
+      return false;}
+  }
+</script>
+</body>
+</html>
