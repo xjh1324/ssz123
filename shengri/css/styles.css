@@ -7,18 +7,21 @@
 }
 body {
   font-family:"Microsoft YaHei";
+  min-width: 1200px;
   color: white;
   font-weight: 300;
 }
 body ::-webkit-input-placeholder {
   /* WebKit browsers */
   font-family:"Microsoft YaHei";
+  min-width: 1200px;
   color: white;
   font-weight: 300;
 }
 body :-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
   font-family:"Microsoft YaHei";
+  min-width: 1200px;
   color: white;
   opacity: 1;
   font-weight: 300;
@@ -26,6 +29,7 @@ body :-moz-placeholder {
 body ::-moz-placeholder {
   /* Mozilla Firefox 19+ */
   font-family:"Microsoft YaHei";
+  min-width: 1200px;
   color: white;
   opacity: 1;
   font-weight: 300;
@@ -33,6 +37,7 @@ body ::-moz-placeholder {
 body :-ms-input-placeholder {
   /* Internet Explorer 10+ */
   font-family:"Microsoft YaHei";
+  min-width: 1200px;
   color: white;
   font-weight: 300;
 }
