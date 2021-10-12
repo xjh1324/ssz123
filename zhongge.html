@@ -7,11 +7,14 @@
 <body>
 <div style="width:100%;text-align:center">
 <form>
-<embed src="mao.mp4" width="800" height="500" hidden=ture align=center> </embed>
-</form>
-<form method="get" action="shengri/shenrizufu.html">
-    <button type="submit">生日快乐</button>
+    <video id="MyVideo" src="mao.mp4" autoplay muted controls style="width:500px;display:block;margin:0px auto;height:auto"></video>
 </form>
 </div>
+<script>
+    myVid=document.getElementById("MyVideo");
+    myVid.addEventListener('ended',function(){
+        window.location.href="shengri/shenrizufu.html";
+    });
+</script>
 </body>
 </html>
